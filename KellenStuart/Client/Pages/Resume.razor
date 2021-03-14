@@ -1,1 +1,55 @@
 ﻿@page "/resume"
+
+<div class="container">
+    <!-- Education -->
+    <div class="row">
+        <div class="@label">
+            <b>education</b>
+        </div>
+        <div class="@content">
+            <a href="https://western.edu/">WSCU</a><br />
+            Bachelor of Computer Science<br />
+            Emphasis in Computer Science<br />
+            GPA 3.91<br />
+            Summa Cum Laude
+        </div>
+        <div class="@date">
+            <i>July 2016</i>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="row">
+        <div class="@label">
+            <b>certifications</b>
+        </div>
+        <div class="@content">
+            <a href="https://www.comptia.org/certifications/security">CompTIA Security +</a>
+        </div>
+        <div class="@date">
+            January 2018
+        </div>
+    </div>
+
+    <!-- Work Experience - Tyler Technologies -->
+    <div class="row">
+        <div class="@label">
+            Work Experience
+        </div>
+        <div class="@content">
+            <i>Software Developer</i><br />
+            <ul>
+                <li>Develop an autopay system for a utility billing website</li>
+                <li>UI redesign a defensive driving website from Bootstrap 3 to Bootstrap 4</li>
+                <li>C# MVC, .NET Core / Framework, SQL Server, Bootstrap 3/4, Javascript, Jquery, PowerShell</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string label = "col-3";
+    private string content = "col-5";
+    private string date = "col-4";
+}
+ 
