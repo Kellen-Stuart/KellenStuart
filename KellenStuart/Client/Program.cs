@@ -24,11 +24,7 @@ namespace KellenStuart.Client
             // Supply HttpClient instances that include access tokens when making requests to the server project
             builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("KellenStuart.ServerAPI"));
 
-            builder.Services.AddMsalAuthentication(options =>
-            {
-                builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
-                options.ProviderOptions.DefaultAccessTokenScopes.Add("api://api.id.uri/access_as_user");
-            });
+            builder.Services.AddApiAuthorization();
 
             await builder.Build().RunAsync();
         }

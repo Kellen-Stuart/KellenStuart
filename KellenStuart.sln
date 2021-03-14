@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.194
+VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Server", "KellenStuart\Server\KellenStuart.Server.csproj", "{2FD0A090-5A08-4DBD-AF2A-BEF8412CFD60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Server", "KellenStuart\Server\KellenStuart.Server.csproj", "{C3BF8B2A-B3B8-4A89-AEFE-F84D68BEBF06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Client", "KellenStuart\Client\KellenStuart.Client.csproj", "{79C4FAD9-1221-4F5A-AFDC-AD8239D9E745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Client", "KellenStuart\Client\KellenStuart.Client.csproj", "{A2A162D2-E19A-40EA-BC4C-8980135F4FF4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Shared", "KellenStuart\Shared\KellenStuart.Shared.csproj", "{4A0E33BF-7746-444E-9AC1-006E7E084F97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KellenStuart.Shared", "KellenStuart\Shared\KellenStuart.Shared.csproj", "{0FF54991-AFD0-4507-993B-5E44CED6518E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FD0A090-5A08-4DBD-AF2A-BEF8412CFD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FD0A090-5A08-4DBD-AF2A-BEF8412CFD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FD0A090-5A08-4DBD-AF2A-BEF8412CFD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FD0A090-5A08-4DBD-AF2A-BEF8412CFD60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79C4FAD9-1221-4F5A-AFDC-AD8239D9E745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79C4FAD9-1221-4F5A-AFDC-AD8239D9E745}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79C4FAD9-1221-4F5A-AFDC-AD8239D9E745}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79C4FAD9-1221-4F5A-AFDC-AD8239D9E745}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A0E33BF-7746-444E-9AC1-006E7E084F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A0E33BF-7746-444E-9AC1-006E7E084F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A0E33BF-7746-444E-9AC1-006E7E084F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A0E33BF-7746-444E-9AC1-006E7E084F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3BF8B2A-B3B8-4A89-AEFE-F84D68BEBF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3BF8B2A-B3B8-4A89-AEFE-F84D68BEBF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3BF8B2A-B3B8-4A89-AEFE-F84D68BEBF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3BF8B2A-B3B8-4A89-AEFE-F84D68BEBF06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A162D2-E19A-40EA-BC4C-8980135F4FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A162D2-E19A-40EA-BC4C-8980135F4FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A162D2-E19A-40EA-BC4C-8980135F4FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A162D2-E19A-40EA-BC4C-8980135F4FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF54991-AFD0-4507-993B-5E44CED6518E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF54991-AFD0-4507-993B-5E44CED6518E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF54991-AFD0-4507-993B-5E44CED6518E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF54991-AFD0-4507-993B-5E44CED6518E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6E3E92FE-2B86-47F4-9C43-05608E460161}
+		SolutionGuid = {2847A005-75B8-4535-B7D0-622D8656F071}
 	EndGlobalSection
 EndGlobal
