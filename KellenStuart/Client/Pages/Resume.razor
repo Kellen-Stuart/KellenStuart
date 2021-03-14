@@ -2,13 +2,13 @@
 
 <div class="container">
     <!-- Education -->
-    <div class="row">
+    <div class="@row">
         <div class="@label">
             <b>education</b>
         </div>
         <div class="@content">
             <a href="https://western.edu/">WSCU</a><br />
-            Bachelor of Computer Science<br />
+            <i>Bachelor of Computer Science</i><br />
             Emphasis in Computer Science<br />
             GPA 3.91<br />
             Summa Cum Laude
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Certifications -->
-    <div class="row">
+    <div class="@row">
         <div class="@label">
             <b>certifications</b>
         </div>
@@ -27,29 +27,78 @@
             <a href="https://www.comptia.org/certifications/security">CompTIA Security +</a>
         </div>
         <div class="@date">
-            January 2018
+            <i>January 2018</i>
         </div>
     </div>
 
     <!-- Work Experience - Tyler Technologies -->
-    <div class="row">
+    <div class="@row">
         <div class="@label">
-            Work Experience
+            <b>work experience</b>
         </div>
         <div class="@content">
+            <a href="https://www.tylertech.com/">Tyler Technologies</a><br />
             <i>Software Developer</i><br />
             <ul>
-                <li>Develop an autopay system for a utility billing website</li>
-                <li>UI redesign a defensive driving website from Bootstrap 3 to Bootstrap 4</li>
-                <li>C# MVC, .NET Core / Framework, SQL Server, Bootstrap 3/4, Javascript, Jquery, PowerShell</li>
+                <li>Develop critical payment systems for utility billing website</li>
+                <li>UI redesign for defensive driving website</li>
+                <li>Maintatin and develop multiple product stacks</li>
             </ul>
+        </div>
+        <div class="@date">
+            <i>August 2018 - Present</i>
+        </div>
+    </div>
+
+    <div class="@row">
+        <div class="@label"></div>
+        <div class="@content">
+            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a>
+            <i>Software Engineer II</i><br />
+            <ul>
+                <li>Redesign UI using Angular on project</li>
+                <li>Work on mission critical systems with Top Secret clearance</li>
+            </ul>
+        </div>
+        <div class="@date">
+            <i>December 2015 - March 2018</i>
+        </div>
+    </div>
+
+    <div class="@row">
+        <div class="@label"></div>
+        <div class="@content">
+            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a>
+            <i>Software Engineer Internship</i>
+            <ul>
+                <li>Developed an internal employee hire tracking site</li>
+                <li>Systems administrator for secure network</li>
+                <li>Developed custom scripts to automate system administration tasks</li>
+            </ul>
+        </div>
+        <div class="@date">
+            <i>May 2015 - December 2015</i>
+        </div>
+    </div>
+    
+    <div class="@row">
+        <div class="@label">
+            <b>teaching</b>
+        </div>
+        <div class="@content">
+            <a href="https://western.edu/">WSCU</a><br />
+            <i>Computer Science Tutor</i><br />
+        </div>
+        <div class="@date">
+            <i>December 2015 - December 2016</i>
         </div>
     </div>
 </div>
 
 @code {
     private string label = "col-3";
-    private string content = "col-5";
-    private string date = "col-4";
+    private string content = "col-6";
+    private string date = "col-3";
+    private string row = "row mb-4";
 }
  
