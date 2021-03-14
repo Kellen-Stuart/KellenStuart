@@ -34,6 +34,18 @@ a, .btn-link {
     list-style-type: '- ';
 }
 
+.ul-padding-gentle {
+    padding: 0 0 0 20px;
+}
+
+.ul-padding-none {
+    padding: 0;
+}
+
+.ul-none {
+    list-style-type: none;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
