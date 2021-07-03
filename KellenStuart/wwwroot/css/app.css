@@ -1,7 +1,7 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Garamond, serif, sans-serif;
 }
 
 a, .btn-link {
@@ -30,6 +30,22 @@ a, .btn-link {
     color: red;
 }
 
+.ul-dashes {
+    list-style-type: '- ';
+}
+
+.ul-padding-gentle {
+    padding: 0 0 0 20px;
+}
+
+.ul-padding-none {
+    padding: 0;
+}
+
+.ul-none {
+    list-style-type: none;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -42,9 +58,9 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
