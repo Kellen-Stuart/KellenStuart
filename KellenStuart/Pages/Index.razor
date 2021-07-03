@@ -1,7 +1,7 @@
 ﻿@page "/"
 
 <div class="row">
-    <div class="col-6">
+    <div class="@content">
         <h3>Education</h3>
         <p class="mb-4">
             Graduated from Western State Colorado University with a bachelor of computer science;
@@ -21,7 +21,11 @@
             Kellen also has soft skills; he can effectively communicate and make critical decisions when needed. 
         </p>
     </div>
-    <div class="col-6 d-flex justify-content-center">
+    <div class="@content d-flex justify-content-center">
         <img src="images/kellen1.jpg" alt="Kellen" style="width: 65%; height: auto;" />
     </div>
 </div>
+
+@code {
+    private string content = "col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12";
+}
