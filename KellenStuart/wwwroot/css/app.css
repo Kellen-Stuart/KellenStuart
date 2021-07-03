@@ -64,3 +64,14 @@ a, .btn-link {
     right: 0.75rem;
     top: 0.5rem;
 }
+
+#stackoverflow-img {
+    width: 15%;
+    height: 15%;
+    margin-bottom: 0%;
+    float:right;
+}
+
+#stackoverflow-anchor {
+    margin-right: -1%;
+}
