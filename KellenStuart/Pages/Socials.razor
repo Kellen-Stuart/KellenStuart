@@ -1,0 +1,30 @@
+﻿@page "/Socials"
+
+<div class="row">
+    <div class="@outerCircle">
+        <a href="https://stackoverflow.com/users/5361412/kolob-canyon" class="inner-circle">
+            <img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg" width="150" height="180" style="margin-left:10px;" />
+        </a>
+    </div>
+    <div class="@outerCircle">
+        <div class="@innerCircle">
+            <a href="https://github.com/Kellen-Stuart" class="bi bi-github" style="@zIndex font-size:170px; margin-top: -30px;"></a>
+        </div>
+    </div>
+    <div class="@outerCircle">
+        <div class="@innerCircle"></div>
+            <a href="https://instagram.com/kellenmstuart" class="bi bi-instagram" style="@zIndex font-size:140px;"></a>
+    </div>
+    <div class="@outerCircle">
+        <div class="@innerCircle">
+            <a href="https://linkedin.com/in/kellenstuart" class="bi bi-linkedin" style="@zIndex font-size:128px;"></a>
+        </div>
+
+    </div>
+</div>
+
+@code {
+    private string outerCircle = "outer-circle d-flex justify-content-center ml-4 mb-2";
+    private string innerCircle = "inner-circle d-flex justify-content-center";
+    private string zIndex = "z-index: 10;";
+}
