@@ -108,6 +108,14 @@ a, .btn-link {
   z-index: 9;
 }
 
+.show-on-print {
+    display: none;
+}
+
+.hide-on-print {
+    display: flex;
+}
+
 @keyframes rotate {
   0% {
     filter: hue-rotate(0deg);

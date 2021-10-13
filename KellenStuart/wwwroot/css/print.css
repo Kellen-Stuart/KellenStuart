@@ -1,0 +1,7 @@
+﻿.show-on-print {
+    display: flex;
+}
+
+.hide-on-print {
+    display: none;
+}

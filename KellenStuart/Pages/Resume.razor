@@ -1,8 +1,19 @@
 ﻿@page "/resume"
+@inject IJSRuntime Js
 
+<div class="row justify-content-md-center justify-content-lg-center">
+    <div class="col-auto">
+        <div class="alert alert-info alert-dismissible fade show @hideOnPrint" role="alert" hidden="@hideAlerts">
+            <a href="javascript:void(0)" @onclick="PrintResume">Need a PDF?</a>
+            <button @onclick="HideAlerts" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
 <div class="container">
     <!-- Print Screen Display -->
-    <div class="@row">
+    <div class="@row @showOnPrint">
         <div class="@label">
             <b>cover letter</b>
         </div>
@@ -14,7 +25,7 @@
         </div>
     </div>
 
-    <div class="@row">
+    <div class="@row @showOnPrint">
         <div class="@label">
             <b>resume</b>
         </div>
@@ -46,7 +57,7 @@
     <!-- Work Experience - Tyler Technologies -->
     <div class="@row">
         <div class="@label">
-            <b>work experience</b>
+            <b>work</b>
         </div>
         <div class="@content">
             <a href="https://www.tylertech.com/">Tyler Technologies</a><br/>
@@ -221,5 +232,20 @@
     private string coverLetterUrl = @"https://kellenstuart.com";
     private string resumeUrl = @"https://kellenstuart.com/resume";
     private DateTime Now = DateTime.Now;
+    private string showOnPrint = "show-on-print";
+    private string hideOnPrint = "hide-on-print";
+    private bool hideAlerts = false;
+
+    private async Task PrintResume()
+    {
+        await Task.Delay(20);
+        await Js.InvokeVoidAsync("PrintResume");
+        HideAlerts();
+    }
+
+    private void HideAlerts()
+    {
+        hideAlerts = true;
+    }
 }
 
