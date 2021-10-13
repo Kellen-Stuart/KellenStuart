@@ -1,16 +1,41 @@
 ﻿@page "/resume"
 
 <div class="container">
+    <!-- Print Screen Display -->
+    <div class="@row">
+        <div class="@label">
+            <b>cover letter</b>
+        </div>
+        <div class="@content">
+            <a href="@coverLetterUrl">@coverLetterUrl</a>
+        </div>
+        <div class="@date">
+            <i>@Now.ToString("y")</i>
+        </div>
+    </div>
+
+    <div class="@row">
+        <div class="@label">
+            <b>resume</b>
+        </div>
+        <div class="@content">
+            <a href="@resumeUrl">@resumeUrl</a>
+        </div>
+        <div class="@date">
+            <i>@Now.ToString("y")</i>
+        </div>
+    </div>
+
     <!-- Education -->
     <div class="@row">
         <div class="@label">
             <b>education</b>
         </div>
         <div class="@content">
-            <a href="https://western.edu/">WSCU</a><br />
-            <i>Bachelor of Computer Science</i><br />
-            Emphasis in Computer Science<br />
-            GPA 3.91<br />
+            <a href="https://western.edu/">WSCU</a><br/>
+            <i>Bachelor of Computer Science</i><br/>
+            Emphasis in Computer Science<br/>
+            GPA 3.91<br/>
             Summa Cum Laude
         </div>
         <div class="@date">
@@ -24,8 +49,8 @@
             <b>work experience</b>
         </div>
         <div class="@content">
-            <a href="https://www.tylertech.com/">Tyler Technologies</a><br />
-            <i>Software Engineer</i><br />
+            <a href="https://www.tylertech.com/">Tyler Technologies</a><br/>
+            <i>Software Engineer</i><br/>
             <ul class="@ul">
                 <li>Full stack .NET C# development</li>
                 <li>DevOps / Web Maintenance</li>
@@ -44,8 +69,8 @@
     <div class="@row">
         <div class="@label"></div>
         <div class="@content">
-            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br />
-            <i>Software Engineer II</i><br />
+            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
+            <i>Software Engineer II</i><br/>
             <ul class="@ul">
                 <li>Angular UI redesigns</li>
                 <li>Java full stack development</li>
@@ -60,7 +85,7 @@
     <div class="@row">
         <div class="@label"></div>
         <div class="@content">
-            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br />
+            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
             <i>Software Engineer Internship</i>
             <ul class="@ul">
                 <li>Full stack LAMP development</li>
@@ -93,8 +118,8 @@
             <b>teaching</b>
         </div>
         <div class="@content">
-            <a href="https://western.edu/">WSCU</a><br />
-            <i>Computer Science Tutor</i><br />
+            <a href="https://western.edu/">WSCU</a><br/>
+            <i>Computer Science Tutor</i><br/>
         </div>
         <div class="@date">
             <i>December 2015 - December 2016</i>
@@ -193,5 +218,8 @@
     private string date = "col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12";
     private string row = "row mb-4";
     private string ul = "ul-dashes ul-padding-gentle";
+    private string coverLetterUrl = @"https://kellenstuart.com";
+    private string resumeUrl = @"https://kellenstuart.com/resume";
+    private DateTime Now = DateTime.Now;
 }
 
