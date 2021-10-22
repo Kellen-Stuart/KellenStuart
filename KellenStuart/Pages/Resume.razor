@@ -12,219 +12,270 @@
     </div>
 </div>
 <div class="container">
-    <!-- Print Screen Display -->
-    <div class="@row @showOnPrint">
-        <div class="@label">
-            <b>cover letter</b>
-        </div>
-        <div class="@content">
-            <a href="@coverLetterUrl">@coverLetterUrl</a>
-        </div>
-        <div class="@date">
-            <i>@Now.ToString("y")</i>
-        </div>
+<!-- Print Screen Display -->
+<div class="@row @showOnPrint">
+    <div class="@label">
+        <b>cover letter</b>
     </div>
-
-    <div class="@row @showOnPrint">
-        <div class="@label">
-            <b>resume</b>
-        </div>
-        <div class="@content">
-            <a href="@resumeUrl">@resumeUrl</a>
-        </div>
-        <div class="@date">
-            <i>@Now.ToString("y")</i>
-        </div>
+    <div class="@content">
+        <a href="@coverLetterUrl">@coverLetterUrl</a>
     </div>
-
-    <!-- Education -->
-    <div class="@row">
-        <div class="@label">
-            <b>education</b>
-        </div>
-        <div class="@content">
-            <a href="https://western.edu/">WSCU</a><br/>
-            <i>Bachelor of Computer Science</i><br/>
-            Emphasis in Computer Science<br/>
-            GPA 3.91<br/>
-            Summa Cum Laude
-        </div>
-        <div class="@date">
-            <i>July 2016</i>
-        </div>
+    <div class="@date">
+        <i>@Now.ToString("y")</i>
     </div>
+</div>
 
-    <!-- Work Experience - Tyler Technologies -->
-    <div class="@row">
-        <div class="@label">
-            <b>work</b>
-        </div>
-        <div class="@content">
-            <a href="https://www.tylertech.com/">Tyler Technologies</a><br/>
-            <i>Software Engineer</i><br/>
-            <ul class="@ul">
-                <li>Full stack .NET C# development</li>
-                <li>DevOps / Web Maintenance</li>
-                <li>Develop critical payment systems</li>
-                <li>ORM maintenance and upgrade</li>
-                <li>UI redesigns</li>
-                <li>Maintain and develop multiple product stacks</li>
-            </ul>
-        </div>
-        <div class="@date">
-            <i>August 2018 - Present</i>
-        </div>
+<div class="@row @showOnPrint">
+    <div class="@label">
+        <b>resume</b>
     </div>
-
-    <!-- Work Experience - Lockheed Martin-->
-    <div class="@row">
-        <div class="@label"></div>
-        <div class="@content">
-            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
-            <i>Software Engineer II</i><br/>
-            <ul class="@ul">
-                <li>Angular UI redesigns</li>
-                <li>Java full stack development</li>
-            </ul>
-        </div>
-        <div class="@date">
-            <i>December 2015 - March 2018</i>
-        </div>
+    <div class="@content">
+        <a href="@resumeUrl">@resumeUrl</a>
     </div>
-
-    <!-- Work Experience - Lockheed Martin-->
-    <div class="@row">
-        <div class="@label"></div>
-        <div class="@content">
-            <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
-            <i>Software Engineer Internship</i>
-            <ul class="@ul">
-                <li>Full stack LAMP development</li>
-                <li>Systems administration</li>
-                <li>Automation</li>
-            </ul>
-        </div>
-        <div class="@date">
-            <i>May 2015 - December 2015</i>
-        </div>
+    <div class="@date">
+        <i>@Now.ToString("y")</i>
     </div>
+</div>
 
-    <!-- Certifications -->
-    <div class="@row">
-        <div class="@label">
-            <b>certifications</b>
-        </div>
-        <div class="@content">
-            <a href="https://www.comptia.org/certifications/security">CompTIA Security +</a>
-        </div>
-        <div class="@date">
-            <i>January 2018</i>
-        </div>
+<!-- Education -->
+<div class="@row">
+    <div class="@label">
+        <b>education</b>
     </div>
-
-
-    <!-- Teaching -->
-    <div class="@row">
-        <div class="@label">
-            <b>teaching</b>
-        </div>
-        <div class="@content">
-            <a href="https://western.edu/">WSCU</a><br/>
-            <i>Computer Science Tutor</i><br/>
-        </div>
-        <div class="@date">
-            <i>December 2015 - December 2016</i>
-        </div>
+    <div class="@content">
+        <a href="https://western.edu/">Western State Colorado University</a><br/>
+        <i>Bachelor of Computer Science</i><br/>
+        <a href="javascript:void(0)" @onclick="FocusJP">Professor John Peterson</a><br/>
+        GPA 3.91<br/>
+        Summa Cum Laude
     </div>
-
-    <!-- Proficient -->
-    <div class="@row">
-        <div class="@label">
-            <b>proficient</b>
-        </div>
-        <div class="@content">
-            <b>languages</b>
-            <p>
-                C#, Typescript, Javascript, TSQL
-            </p>
-            <b>frameworks</b>
-            <p>
-                ASP.NET MVC, Blazor, Angular 11, .NET Core, .NET Framework
-            </p>
-            <b>cloud</b>
-            <p>
-                Azure, AWS
-            </p>
-            <b>database / orm</b>
-            <p>
-                SQL Server, MySql, Entity Framework, Dapper, LINQ to SQL
-            </p>
-            <b>platform</b>
-            <p>
-                Node.js
-            </p>
-            <b>ide</b>
-            <p>
-                Visual Studio 2019, Visual Studio Code, Rider 2021.2, Eclipse
-            </p>
-            <b>automation / cli</b>
-            <p>
-                Powershell Core, Dotnet CLI, IIS Administration, Active Directory, NUnit, XUnit, Selenium
-            </p>
-            <b>stylesheet</b>
-            <p>
-                LESS, SASS, CSS
-            </p>
-            <b>package management</b>
-            <p>
-                Chocolatey, Apt-Get, NPM, PowerShellGet
-            </p>
-            <b>dev ops</b>
-            <p>
-                Dotnet Publish, TeamCity, Octopus Deploy
-            </p>
-            <b>version control</b>
-            <p>
-                Git, GitHub, GitLab, POSH-Git, Bitbucket
-            </p>
-            <b>api</b>
-            <p>
-                ASP.NET Web API, OAuth 2.0
-            </p>
-            <b>authentication</b>
-            <p>
-                Microsoft Identity Platform
-            </p>
-            <b>cryptography</b>
-            <p>
-                Public / Private Key Encryption
-            </p>
-            <b>networking</b>
-            <p>
-                SSH, RDP, OpenWRT, PowerShell, BASH
-            </p>
-            <b>productivity</b>
-            <p>
-                VIM
-            </p>
-            <b>debugging</b>
-            <p>
-                DotMemory, DotTrace
-            </p>
-        </div>
-        <div class="@date"></div>
+    <div class="@date">
+        <i>July 2016</i>
     </div>
+</div>
 
-    <!-- Familiar -->
-    <div class="@row">
-        <div class="@label">
-            <b>familiar</b>
-        </div>
-        <div class="@content">
-            <p>Haskell, Scala, Python, LISP, Java, PHP</p>
-        </div>
-        <div class="@date"></div>
+<!-- Work Experience - Tyler Technologies -->
+<div class="@row">
+    <div class="@label">
+        <b>work</b>
     </div>
+    <div class="@content">
+        <a href="https://www.tylertech.com/">Tyler Technologies</a><br/>
+        <i>Software Engineer</i><br/>
+        <p class="@workParagraph">
+            This position entails developing critical payment systems for a large utility billing software suite.
+            Autopay in particular is a large source of recurring revenue and has been the main focus for this position;
+            autopay has grown from a couple thousand to 350,000+ in the past three years.
+            My job is to scale our software system to handle payments enmasse.
+            Furthermore, I am tasked with improving the look and feel of the system;
+            an example of this: we've recently added "text to pay enrollment" which allows users to manage autopay via their phone.
+        </p>
+        <ul class="@ul">
+            <li>Full Stack .NET C# Web Development</li>
+            <li>Upgrade ORM from LINQ To SQL to Entity Framework Core</li>
+            <li>Redesign UI to look modern</li>
+            <li>Greatly improve database performance</li>
+            <li>Scale monoliths into microservices</li>
+            <li>Upgrade projects from .NET Framework to .NET Core</li>
+            <li>Develop API's using the latest .NET Core standards</li>
+            <li>Develop a test suite which promotes test driven development</li>
+            <li>Standardize UI by following material design practices (ASP.Net Razor Pages / Angular)</li>
+            <li>Upgrade the email system to support SendGrid</li>
+            <li>Support text messaging by integrating with Twilio</li>
+        </ul>
+    </div>
+    <div class="@date">
+        <i>August 2018 - Present</i>
+    </div>
+</div>
+
+<!-- Work Experience - Lockheed Martin-->
+<div class="@row">
+    <div class="@label"></div>
+    <div class="@content">
+        <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
+        <i>Software Engineer II</i>
+        <p class="@workParagraph">
+            This position entailed supporting a missile defense system by integrating new technology with the old.
+            After my internship, I was tasked to upgrade the internal employee tracking system -
+            everything was tracked by an excel sheet; my task was to create
+            a web application that automated the process.
+            Concurrently, I helped the IT team automate their repetitive processes with the use of PowerShell.
+            Also during this time, I attained a
+            <a href="https://www.comptia.org/certifications/security">CompTIA Security+ certificate</a>.
+        </p>
+        <p class="@workParagraph">
+            Soon after, I was promoted to another missile defense project. The goal was to move from a desktop application to a web based application.
+            My job was to identify the best web technology for this upgrade and present it.
+            Furthermore, I was tasked to research how to hookup this new technology with legacy server-side code.
+            Soon after my promotion, I was recruited by Tyler Technologies;
+            a big reason for this change was to stay technologically relevent within the industry and to continually improve my skillset.
+        </p>
+        <ul class="@ul">
+            <li>UI redesign (Angular, JQuery UI)</li>
+            <li>Database conversions (MySql, MongoDB)</li>
+            <li>Analyze ways to integrate legacy with new services</li>
+            <li>Full stack development (Angular/Java & LAMP)</li>
+            <li>Work with Linux production environments</li>
+        </ul>
+    </div>
+    <div class="@date">
+        <i>December 2015 - March 2018</i>
+    </div>
+</div>
+
+<!-- Work Experience - Lockheed Martin-->
+<div class="@row">
+    <div class="@label"></div>
+    <div class="@content">
+        <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
+        <i>Software Engineer Internship</i>
+        <ul class="@ul">
+            <li>Full stack LAMP development</li>
+            <li>Systems administration</li>
+            <li>Became intimately familiar with Active Directory in Windows</li>
+            <li>PowerShell Automation</li>
+        </ul>
+    </div>
+    <div class="@date">
+        <i>May 2015 - December 2015</i>
+    </div>
+</div>
+
+<!-- Certifications -->
+<div class="@row">
+    <div class="@label">
+        <b>certifications</b>
+    </div>
+    <div class="@content">
+        <a href="https://www.comptia.org/certifications/security">CompTIA Security +</a>
+    </div>
+    <div class="@date">
+        <i>January 2018</i>
+    </div>
+</div>
+
+
+<!-- Teaching -->
+<div class="@row">
+    <div class="@label">
+        <b>teaching</b>
+    </div>
+    <div class="@content">
+        <a href="https://western.edu/">Western State Colorado University</a><br/>
+        <i>Computer Science Tutor & Grader</i><br/>
+    </div>
+    <div class="@date">
+        <i>December 2015 - December 2016</i>
+    </div>
+</div>
+
+<!-- Proficient -->
+<div class="@row">
+    <div class="@label">
+        <b>proficient</b>
+    </div>
+    <div class="@content">
+        <b>languages</b>
+        <p>
+            C#, Typescript, Javascript, TSQL
+        </p>
+        <b>frameworks</b>
+        <p>
+            ASP.NET MVC, Blazor, Angular 11, .NET Core, .NET Framework
+        </p>
+        <b>cloud</b>
+        <p>
+            Azure, AWS
+        </p>
+        <b>database / orm</b>
+        <p>
+            SQL Server, MySql, Entity Framework, Dapper, LINQ to SQL
+        </p>
+        <b>platform</b>
+        <p>
+            Node.js
+        </p>
+        <b>ide</b>
+        <p>
+            Visual Studio 2019, Visual Studio Code, Rider 2021.2, Eclipse
+        </p>
+        <b>automation / cli</b>
+        <p>
+            Powershell Core, Dotnet CLI, IIS Administration, Active Directory, NUnit, XUnit, Selenium
+        </p>
+        <b>stylesheet</b>
+        <p>
+            LESS, SASS, CSS
+        </p>
+        <b>package management</b>
+        <p>
+            Chocolatey, Apt-Get, NPM, PowerShellGet
+        </p>
+        <b>dev ops</b>
+        <p>
+            Dotnet Publish, TeamCity, Octopus Deploy
+        </p>
+        <b>version control</b>
+        <p>
+            Git, GitHub, GitLab, POSH-Git, Bitbucket
+        </p>
+        <b>api</b>
+        <p>
+            ASP.NET Web API, OAuth 2.0
+        </p>
+        <b>authentication</b>
+        <p>
+            Microsoft Identity Platform
+        </p>
+        <b>cryptography</b>
+        <p>
+            Public / Private Key Encryption
+        </p>
+        <b>networking</b>
+        <p>
+            SSH, RDP, OpenWRT, PowerShell, BASH
+        </p>
+        <b>productivity</b>
+        <p>
+            VIM
+        </p>
+        <b>debugging</b>
+        <p>
+            DotMemory, DotTrace
+        </p>
+    </div>
+    <div class="@date"></div>
+</div>
+
+<!-- Familiar -->
+<div class="@row">
+    <div class="@label">
+        <b>familiar</b>
+    </div>
+    <div class="@content">
+        <p>Haskell, Scala, Python, LISP, Java, PHP</p>
+    </div>
+    <div class="@date"></div>
+</div>
+
+<div id="john-peterson" class="@row" tabindex="0">
+    <div class="@label">
+        <b>john peterson</b>
+    </div>
+    <div class="@content">
+        <p>
+            My professor <a href="https://archive.gunnisontimes.com/obituaries/john-peterson">John Peterson</a> was an aboslute legend.
+            John suffered a rock climbing accident at the Moab Arches in 2017 and has since passed away...
+        </p>
+        <p>
+            John was one of the authors of the <a href="https://www.haskell.org/onlinereport/">Haskell Report</a> and the <a href="https://www.haskell.org/tutorial/">Gentle Introduction to Haskell</a>.
+            Futhermore, he participated in the early development of Functional Reactive Programming and the arrow-based
+            <a href="https://hackage.haskell.org/package/Yampa">Yampa Library</a>.
+            He is well respected in the community and I plan to dedicate a page on my site for him in the future. Rest in peace...
+        </p>
+    </div>
+</div>
 </div>
 
 @code {
@@ -239,6 +290,12 @@
     private string showOnPrint = "show-on-print";
     private string hideOnPrint = "hide-on-print";
     private bool hideAlerts = false;
+    private string workParagraph = "pl-3";
+
+    private async Task FocusJP()
+    {
+        await Js.InvokeVoidAsync("FocusJP");
+    }
 
     private async Task PrintResume()
     {
@@ -251,5 +308,5 @@
     {
         hideAlerts = true;
     }
-}
 
+}
