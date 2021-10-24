@@ -1,5 +1,6 @@
 ﻿@page "/resume"
 @inject IJSRuntime Js
+@inherits Base
 
 <div class="row justify-content-md-center justify-content-lg-center">
     <div class="col-auto">
@@ -18,7 +19,7 @@
         <b>cover letter</b>
     </div>
     <div class="@content">
-        <a href="@coverLetterUrl">@coverLetterUrl</a>
+        <a href="@Urls["Home"]">@Urls["Home"]</a>
     </div>
     <div class="@date">
         <i>@Now.ToString("y")</i>
@@ -30,7 +31,7 @@
         <b>resume</b>
     </div>
     <div class="@content">
-        <a href="@resumeUrl">@resumeUrl</a>
+        <a href="@Urls["Resume"]">@Urls["Resume"]</a>
     </div>
     <div class="@date">
         <i>@Now.ToString("y")</i>
@@ -74,7 +75,7 @@
             In other words, a large part of my job is to handle payments enmasse. 
             Furthermore, I modernize the look and feel of our systems;
             <a href="https://www.expresslanedefensivedriving.com">ExpressLane Defensive Driving</a> 
-            is a production example of a redesign I did shortly after starting with Tyler Tech.
+            is a production example of a redesign I did shortly after joining Tyler Tech.
         </p>
         <ul class="@ul">
             <li>Full Stack .NET C# Web Development</li>
@@ -99,7 +100,7 @@
 <div class="@row">
     <div class="@label"></div>
     <div class="@content">
-        <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
+        <a href="">Lockheed Martin</a><br/>
         <i>Software Engineer II</i>
         <p class="@workParagraph">
             This position entailed supporting a missile defense system by integrating new technology with the old.
@@ -108,7 +109,7 @@
             a web application that automated the process.
             Concurrently, I helped the IT team automate their repetitive processes with the use of PowerShell.
             Also during this time, I attained a
-            <a href="https://www.comptia.org/certifications/security">CompTIA Security+ Certificate</a>.
+            <a href="@Urls["CompTIASecurityPlus"]">CompTIA Security+ Certificate</a>.
         </p>
         <p class="@workParagraph">
             Soon after, I was promoted to another missile defense project. The goal was to move from a desktop application to a web based application.
@@ -134,7 +135,7 @@
 <div class="@row">
     <div class="@label"></div>
     <div class="@content">
-        <a href="https://www.lockheedmartin.com/en-us/index.html">Lockheed Martin</a><br/>
+        <a href="@Urls["LockheedMartin"]">Lockheed Martin</a><br/>
         <i>Software Engineer Internship</i>
         <ul class="@ul">
             <li>Full stack LAMP development</li>
@@ -154,7 +155,7 @@
         <b>certifications</b>
     </div>
     <div class="@content">
-        <a href="https://www.comptia.org/certifications/security">CompTIA Security +</a>
+        <a href="@Urls["CompTIASecurityPlus"]">CompTIA Security +</a>
     </div>
     <div class="@date">
         <i>January 2018</i>
@@ -168,7 +169,7 @@
         <b>teaching</b>
     </div>
     <div class="@content">
-        <a href="https://western.edu/">Western State Colorado University</a><br/>
+        <a href="@Urls["WSCU"]">Western State Colorado University</a><br/>
         <i>Computer Science Tutor & Grader</i><br/>
     </div>
     <div class="@date">
@@ -271,13 +272,14 @@
     </div>
     <div class="@content">
         <p>
-            My professor <a href="https://archive.gunnisontimes.com/obituaries/john-peterson">John Peterson</a> was an aboslute legend.
+            My professor <a href="@Urls["JohnPetersonObituary"]">John Peterson</a> was an aboslute legend.
             John suffered a rock climbing accident at the Moab Arches in 2017 and has since passed away...
         </p>
         <p>
-            John was one of the authors of the <a href="https://www.haskell.org/onlinereport/">Haskell Report</a> and the <a href="https://www.haskell.org/tutorial/">Gentle Introduction to Haskell</a>.
+            John was one of the authors of the <a href="@Urls["HaskellReport"]">Haskell Report</a> 
+            and the <a href="">Gentle Introduction to Haskell</a>.
             Futhermore, he participated in the early development of Functional Reactive Programming and the arrow-based
-            <a href="https://hackage.haskell.org/package/Yampa">Yampa Library</a>.
+            <a href="@Urls["YampaLibrary"]">Yampa Library</a>.
             He is well respected in the community and I plan to dedicate a page on my site for him in the future. 
             People may not consider Western State Colorado University a premiere CS school, but it was when John was working there....
             Rest in peace...
@@ -294,8 +296,6 @@
     private string date = "col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12";
     private string row = "row mb-4";
     private string ul = "ul-dashes ul-padding-gentle";
-    private string coverLetterUrl = @"https://kellenstuart.com";
-    private string resumeUrl = @"https://kellenstuart.com/resume";
     private DateTime Now = DateTime.Now;
     private string showOnPrint = "show-on-print";
     private string hideOnPrint = "hide-on-print";

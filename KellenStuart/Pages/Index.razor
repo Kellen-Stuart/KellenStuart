@@ -1,7 +1,8 @@
 ﻿@page "/"
+@inherits ArticleBase
 
 <div class="row">
-    <div class="@content">
+    <div class="@Content">
         <h3>Education</h3>
         <p class="mb-4">
             Graduated from Western State Colorado University with a bachelor of computer science;
@@ -21,7 +22,7 @@
             Kellen also has soft skills; he can communicate effectively and make mission critical decisions. 
         </p>
     </div>
-    <div class="@content d-flex justify-content-center">
+    <div class="@Content d-flex justify-content-center">
         <img src="images/kellen1.jpg" class="img-fluid img-thumbnail" alt="Kellen" />
     </div>
 </div>
@@ -39,6 +40,3 @@
 </div>
 
 *@
-@code {
-    private string content = "col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12";
-}
