@@ -26,6 +26,10 @@ a, .btn-link {
     outline: 1px solid red;
 }
 
+.subhead {
+    initial-letter: 2;
+}
+
 .validation-message {
     color: red;
 }

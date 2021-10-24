@@ -1,10 +1,10 @@
 ﻿@page "/resume"
 @inject IJSRuntime Js
-@inherits Base
+@inherits ResumeBase
 
 <div class="row justify-content-md-center justify-content-lg-center">
     <div class="col-auto">
-        <div class="alert alert-info alert-dismissible fade show @hideOnPrint" role="alert" hidden="@hideAlerts">
+        <div class="alert alert-info alert-dismissible fade show @HideOnPrint" role="alert" hidden="@_hideAlerts">
             <a href="javascript:void(0)" @onclick="PrintResume">Need a PDF?</a>
             <button @onclick="HideAlerts" type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -14,70 +14,70 @@
 </div>
 <div class="container">
 <!-- Print Screen Display -->
-<div class="@row @showOnPrint">
-    <div class="@label">
+<div class="@Row @ShowOnPrint">
+    <div class="@Label">
         <b>cover letter</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="@Urls["Home"]">@Urls["Home"]</a>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>@Now.ToString("y")</i>
     </div>
 </div>
 
-<div class="@row @showOnPrint">
-    <div class="@label">
+<div class="@Row @ShowOnPrint">
+    <div class="@Label">
         <b>resume</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="@Urls["Resume"]">@Urls["Resume"]</a>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>@Now.ToString("y")</i>
     </div>
 </div>
 
 <!-- Education -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>education</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="https://western.edu/">Western State Colorado University</a><br/>
-        <a href="javascript:void(0)" @onclick="FocusJP">Professor John Peterson</a><br/>
+        <a href="javascript:void(0)" @onclick="FocusJp">Professor John Peterson</a><br/>
         <i>Bachelor of Computer Science</i><br/>
         GPA 3.91<br/>
         Summa Cum Laude
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>July 2016</i>
     </div>
 </div>
 
 <!-- Work Experience - Tyler Technologies -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>work</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="https://www.tylertech.com/">Tyler Technologies</a><br/>
         <i>Software Engineer</i><br/>
-        <p class="@workParagraph">
-            This position entails developing critical payment systems for a large utility billing software suite called 
+        <p class="@WorkParagraph">
+            This position entails developing critical payment systems for a large utility billing software suite called
             <a href="https://municipalonlinepayments.com/goldenco">InSite</a>.
             Autopay is my core focus; it's a large source of recurring revenue for Tyler Tech.
             Each month, when a customer gets a utility bill, our website is responsbile for reminding, scheduling and processing their utility payment.
             Autopay is key feature, as many people don't want to login and pay manually each month.
             Since joining the company, customer enrollment in autopay has grown from 1,000 to 350,000+ in the period of three years.
-            When I originally joined, we could barely support 5,000 autopayments a day; 
+            When I originally joined, we could barely support 5,000 autopayments a day;
             we are now able to handle 500,000+ in a timely manner largely due to my efforts.
-            In other words, a large part of my job is to handle payments enmasse. 
+            In other words, a large part of my job is to handle payments enmasse.
             Furthermore, I modernize the look and feel of our systems;
-            <a href="https://www.expresslanedefensivedriving.com">ExpressLane Defensive Driving</a> 
+            <a href="https://www.expresslanedefensivedriving.com">ExpressLane Defensive Driving</a>
             is a production example of a redesign I did shortly after joining Tyler Tech.
         </p>
-        <ul class="@ul">
+        <ul class="@Ul">
             <li>Full Stack .NET C# Web Development</li>
             <li>Upgrade ORM from LINQ To SQL to Entity Framework Core</li>
             <li>Redesign UI's to look modern</li>
@@ -91,18 +91,18 @@
             <li>Support text messaging by integrating with Twilio</li>
         </ul>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>August 2018 - Present</i>
     </div>
 </div>
 
 <!-- Work Experience - Lockheed Martin-->
-<div class="@row">
-    <div class="@label"></div>
-    <div class="@content">
+<div class="@Row">
+    <div class="@Label"></div>
+    <div class="@Content">
         <a href="">Lockheed Martin</a><br/>
         <i>Software Engineer II</i>
-        <p class="@workParagraph">
+        <p class="@WorkParagraph">
             This position entailed supporting a missile defense system by integrating new technology with the old.
             After my internship, I was tasked to upgrade the internal employee tracking system -
             everything was tracked by an excel sheet; my task was to create
@@ -111,14 +111,14 @@
             Also during this time, I attained a
             <a href="@Urls["CompTIASecurityPlus"]">CompTIA Security+ Certificate</a>.
         </p>
-        <p class="@workParagraph">
+        <p class="@WorkParagraph">
             Soon after, I was promoted to another missile defense project. The goal was to move from a desktop application to a web based application.
             My job was to identify the best web technology for this upgrade and present it.
             Furthermore, I was tasked to research how to hookup this new technology with legacy server-side code.
             Soon after my promotion, I was recruited by Tyler Technologies;
             a big reason for this change was to stay technologically relevent within the industry and to continually improve my skillset.
         </p>
-        <ul class="@ul">
+        <ul class="@Ul">
             <li>UI redesign (Angular, JQuery UI)</li>
             <li>Database conversions (MySql, MongoDB)</li>
             <li>Analyze ways to integrate legacy with new services</li>
@@ -126,63 +126,63 @@
             <li>Work with Linux production environments</li>
         </ul>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>December 2015 - March 2018</i>
     </div>
 </div>
 
 <!-- Work Experience - Lockheed Martin-->
-<div class="@row">
-    <div class="@label"></div>
-    <div class="@content">
+<div class="@Row">
+    <div class="@Label"></div>
+    <div class="@Content">
         <a href="@Urls["LockheedMartin"]">Lockheed Martin</a><br/>
         <i>Software Engineer Internship</i>
-        <ul class="@ul">
+        <ul class="@Ul">
             <li>Full stack LAMP development</li>
             <li>Systems administration</li>
             <li>Became intimately familiar with Active Directory in Windows</li>
             <li>PowerShell Automation</li>
         </ul>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>May 2015 - December 2015</i>
     </div>
 </div>
 
 <!-- Certifications -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>certifications</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="@Urls["CompTIASecurityPlus"]">CompTIA Security +</a>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>January 2018</i>
     </div>
 </div>
 
 
 <!-- Teaching -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>teaching</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <a href="@Urls["WSCU"]">Western State Colorado University</a><br/>
         <i>Computer Science Tutor & Grader</i><br/>
     </div>
-    <div class="@date">
+    <div class="@Date">
         <i>December 2015 - December 2016</i>
     </div>
 </div>
 
 <!-- Proficient -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>proficient</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <b>languages</b>
         <p>
             C#, Typescript, Javascript, TSQL
@@ -252,35 +252,35 @@
             DotMemory, DotTrace
         </p>
     </div>
-    <div class="@date"></div>
+    <div class="@Date"></div>
 </div>
 
 <!-- Familiar -->
-<div class="@row">
-    <div class="@label">
+<div class="@Row">
+    <div class="@Label">
         <b>familiar</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <p>Haskell, Scala, Python, LISP, Java, PHP</p>
     </div>
-    <div class="@date"></div>
+    <div class="@Date"></div>
 </div>
 
-<div id="john-peterson" class="@row" tabindex="0">
-    <div class="@label">
+<div id="john-peterson" class="@Row" tabindex="0">
+    <div class="@Label">
         <b>john peterson</b>
     </div>
-    <div class="@content">
+    <div class="@Content">
         <p>
             My professor <a href="@Urls["JohnPetersonObituary"]">John Peterson</a> was an aboslute legend.
             John suffered a rock climbing accident at the Moab Arches in 2017 and has since passed away...
         </p>
         <p>
-            John was one of the authors of the <a href="@Urls["HaskellReport"]">Haskell Report</a> 
+            John was one of the authors of the <a href="@Urls["HaskellReport"]">Haskell Report</a>
             and the <a href="">Gentle Introduction to Haskell</a>.
             Futhermore, he participated in the early development of Functional Reactive Programming and the arrow-based
             <a href="@Urls["YampaLibrary"]">Yampa Library</a>.
-            He is well respected in the community and I plan to dedicate a page on my site for him in the future. 
+            He is well respected in the community and I plan to dedicate a page on my site for him in the future.
             People may not consider Western State Colorado University a premiere CS school, but it was when John was working there....
             Rest in peace...
         </p>
@@ -291,18 +291,13 @@
 </div>
 
 @code {
-    private string label = "col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12";
-    private string content = "col-xl-7 col-lg-7 col-md-6 col-sm-6 col-12";
-    private string date = "col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12";
-    private string row = "row mb-4";
-    private string ul = "ul-dashes ul-padding-gentle";
     private DateTime Now = DateTime.Now;
-    private string showOnPrint = "show-on-print";
-    private string hideOnPrint = "hide-on-print";
-    private bool hideAlerts = false;
-    private string workParagraph = "pl-3";
+    private const string ShowOnPrint = "show-on-print";
+    private const string HideOnPrint = "hide-on-print";
+    private bool _hideAlerts = false;
+    private const string WorkParagraph = "pl-3";
 
-    private async Task FocusJP()
+    private async Task FocusJp()
     {
         await Js.InvokeVoidAsync("FocusJP");
     }
@@ -316,7 +311,7 @@
 
     private void HideAlerts()
     {
-        hideAlerts = true;
+        _hideAlerts = true;
     }
 
 }

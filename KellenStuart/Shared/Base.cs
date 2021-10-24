@@ -19,6 +19,7 @@ namespace KellenStuart.Shared
             Urls["YampaLibrary"] = "https://hackage.haskell.org/package/Yampa";
             Urls["Home"] = "https://kellenstuart.com";
             Urls["Resume"] = "https://kellenstuart.com/resume";
+            Urls["Calendly"] = "https://calendly.com/kellenstuart/phone-call";
         }
     }
 }

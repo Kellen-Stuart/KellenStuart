@@ -1,13 +1,22 @@
 ﻿@page "/Contact"
+@inherits ArticleBase
 
 <div class="row">
-    <h3>Contact</h3>
+    <div class="@Content">
+        <h3>
+            Contact
+            <small class="text-muted">Kellen Stuart</small>
+        </h3>
+        <hr/>
+    </div>
 </div>
 
 <div class="row">
-    <p>
-        Please 
-        <a href="https://calendly.com/kellenstuart/phone-call">schedule a time</a>
-        for a 15 minute phone call if you're interested in talking.
-    </p>
+    <div class="@Content">
+        <p>
+            Please
+            <a href="@Urls["Calendly"]">schedule a time</a>
+            for a phone call on my calendar.
+        </p>
+    </div>
 </div>
