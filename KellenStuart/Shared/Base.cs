@@ -20,6 +20,12 @@ namespace KellenStuart.Shared
             Urls["Home"] = "https://kellenstuart.com";
             Urls["Resume"] = "https://kellenstuart.com/resume";
             Urls["Calendly"] = "https://calendly.com/kellenstuart/phone-call";
+            
+            // Socials
+            Urls["Stackoverflow"] = "https://stackoverflow.com/users/story/5361412";
+            Urls["Github"] = "https://github.com/Kellen-Stuart";
+            Urls["Instagram"] = "https://instagram.com/kellenmstuart";
+            Urls["LinkedIn"] = "https://linkedin.com/in/kellenstuart";
         }
     }
 }
