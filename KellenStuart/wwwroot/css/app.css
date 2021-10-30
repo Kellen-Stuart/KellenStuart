@@ -1,5 +1,28 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Tags */
 html, body {
     font-family: Garamond, serif, sans-serif;
 }
@@ -8,34 +31,87 @@ a, .btn-link {
     color: #0366d6;
 }
 
+/* Classes */
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
 
+
 .content {
     padding-top: 1.1rem;
 }
 
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+.gradient-border {
+    --borderWidth: 3px;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.hide-on-print {
+    display: flex;
+}
+
+.inner-circle {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    background: black;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 9;
 }
 
 .invalid {
     outline: 1px solid red;
 }
 
-.subhead {
-    initial-letter: 2;
+.outer-circle {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
 }
 
-.validation-message {
-    color: red;
+.outer-circle span {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+}
+
+.show-on-print {
+    display: none;
+}
+
+.tile:hover {
+    background-image: linear-gradient(180deg, #6284FF 50%, #FF0000 100%);
 }
 
 .ul-dashes {
     list-style-type: '- ';
+}
+
+.ul-none {
+    list-style-type: none;
 }
 
 .ul-padding-gentle {
@@ -46,14 +122,15 @@ a, .btn-link {
     padding: 0;
 }
 
-.ul-none {
-    list-style-type: none;
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
 }
 
-.tile:hover {
-    background-image: linear-gradient(180deg, #6284FF 50%, #FF0000 100%);
+.validation-message {
+    color: red;
 }
 
+/* Ids */
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -73,66 +150,6 @@ a, .btn-link {
     top: 0.5rem;
 }
 
-#stackoverflow-img {
-    width: 15%;
-    height: 15%;
-    margin-bottom: 0%;
-    float:right;
-}
-
-#stackoverflow-anchor {
-    margin-right: -0.5%;
-}
-
-.outer-circle {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  border-radius: 50%;
-  animation: rotate 1.5s linear infinite;
-}
-
-.outer-circle span {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  border-radius: 50%;
-}
-
-.inner-circle {
-  height: 180px;
-  width: 180px;
-  position: absolute;
-  background: black;
-  top: 10px;
-  left: 10px;
-  border-radius: 50%;
-  z-index: 9;
-}
-
-.show-on-print {
-    display: none;
-}
-
-.hide-on-print {
-    display: flex;
-}
-
-@keyframes rotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-/*
-JP Border
-*/
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 #box {
     display: flex;
     align-items: center;
@@ -140,40 +157,17 @@ JP Border
     width: 400px;
     height: 200px;
     color: white;
-    font-family: 'Raleway';
+    font-family: 'Raleway', serif;
     font-size: 2.5rem;
 }
-.gradient-border {
-    --borderWidth: 3px;
-    /*
-    background: #1D1F20;
-    */
-    position: relative;
-    border-radius: var(--borderWidth);
-}
-.gradient-border:after {
-    content: '';
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
+
+#stackoverflow-anchor {
+    margin-right: -0.5%;
 }
 
-
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+#stackoverflow-img {
+    width: 15%;
+    height: 15%;
+    margin-bottom: 0%;
+    float:right;
 }
