@@ -20,6 +20,7 @@ namespace KellenStuart.Shared
             Urls["Home"] = "https://kellenstuart.com";
             Urls["Resume"] = "https://kellenstuart.com/resume";
             Urls["Calendly"] = "https://calendly.com/kellenstuart/phone-call";
+            Urls["AzureCertification"] = "https://docs.microsoft.com/en-us/learn/certifications/azure-developer/";
             
             // Socials
             Urls["Stackoverflow"] = "https://stackoverflow.com/users/story/5361412";
