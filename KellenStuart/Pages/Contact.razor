@@ -24,3 +24,12 @@
     </div>
 </div>
 *@
+
+@code
+{
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        Js.InvokeVoidAsync("initCalendly");
+    }
+}
